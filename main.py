@@ -73,7 +73,7 @@ def display_score(score):
 
 # Загрузка изображения для головы змейки. Обработка ошибок.
 try:
-    heart_image = pygame.image.load("sans2.jpg") # Загрузка изображения сердца
+    heart_image = pygame.image.load("soul.jpg") # Загрузка изображения сердца
     heart_image = pygame.transform.scale(heart_image, (snake_block_size, snake_block_size)) # Масштабирование под размер блока
 except pygame.error as e:
     print(f"{e}")
@@ -87,7 +87,7 @@ bones = [] # Список костей.
 
 # Загрузка изображения кости. Обработка ошибок.
 try:
-    bone_image = pygame.image.load("rekikol.png").convert_alpha() # Загрузка изображения кости с альфа-каналом
+    bone_image = pygame.image.load("bones.png").convert_alpha() # Загрузка изображения кости с альфа-каналом
     bone_image = pygame.transform.scale(bone_image, (bone_size, bone_size)) # Масштабирование
 except pygame.error as e:
     print(f"{e}")
